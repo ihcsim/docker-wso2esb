@@ -7,12 +7,12 @@ If you find this helpful, feel free to endorse me on [coderwall](https://coderwa
 
 The dockerfile will:
 * Set the `JAVA_HOME` environmental variable.
-* Use `wget` to pull the DSS 3.2.0 ZIP from a S3 bucket into the container `/opt` folder.
+* Use `wget` to pull the ESB 3.2.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
 * Unzip the ESB 4.8.1 ZIP.
 * Remove the ESB 4.8.1 ZIP.
 * Expose the container port `9443`.
-* Set the DSS `wso2server.sh` start-up script as the container start-up command.
+* Set the ESB `wso2server.sh` start-up script as the container start-up command.
 
 ### Usage
 * To pull: `docker pull isim/wso2esb`
