@@ -18,5 +18,5 @@ The dockerfile will:
 * To pull: `docker pull isim/wso2esb`
 * To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2esb`
 * To run: `docker run --rm --name your_container_name -p 9443:9443 your_image_name`
-* To access ESB web admin console, navigate to https://localhost:9443
+* To access ESB web admin console, navigate to `https://localhost:9443`
 
