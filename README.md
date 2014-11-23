@@ -6,7 +6,6 @@ Docker image to install and run WSO2 Enterprise Service Bus. It uses the [docker
 If you find this helpful, feel free to endorse me on [coderwall](https://coderwal.com/ivanhcsim). [![endorse](https://api.coderwall.com/ivanhcsim/endorsecount.png)](https://coderwall.com/ivanhcsim)
 
 The dockerfile will:
-* Set the `JAVA_HOME` environmental variable.
 * Use `wget` to pull the ESB 3.2.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
 * Unzip the ESB 4.8.1 ZIP.
