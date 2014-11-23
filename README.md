@@ -19,3 +19,6 @@ The dockerfile will:
 * To run: `docker run --rm --name your_container_name -p 9443:9443 your_image_name`
 * To access ESB web admin console, navigate to `https://localhost:9443`
 
+Follow me on [![alt text][1.1]][1]
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+[1]: http://www.twitter.com/IvanHCSIM
