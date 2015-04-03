@@ -2,7 +2,7 @@
 # WSO2 ESB 4.8.1
 #
 FROM java:7
-MAINTAINER isim, ihcsim@gmail.com
+MAINTAINER Ivan Sim, ihcsim@gmail.com
 
 # copy zip from local folder to container
 RUN wget -P /opt https://s3-us-west-2.amazonaws.com/wso2-stratos/wso2esb-4.8.1.zip && \
