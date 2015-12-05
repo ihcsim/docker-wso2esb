@@ -1,5 +1,4 @@
-docker-wso2esb
-===================
+### docker-wso2esb
 
 Docker image to install and run WSO2 Enterprise Service Bus. It uses the [dockerfile/java](https://index.docker.io/u/dockerfile/java/) as its base image.
 
