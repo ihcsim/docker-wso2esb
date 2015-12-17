@@ -1,7 +1,7 @@
 #
 # WSO2 ESB 4.8.1
 #
-FROM isim/oraclejava
+FROM isim/oraclejava:1.7.0_80
 MAINTAINER Ivan Sim, ihcsim@gmail.com
 
 # copy zip from local folder to container
