@@ -1,29 +1,28 @@
-### docker-wso2esb
+# docker-wso2esb
 
-Docker image to install and run WSO2 Enterprise Service Bus. 
+Docker image to install and run WSO2 Enterprise Service Bus.
 
-### Tags
-
-* [4.9.0, latest](https://github.com/ihcsim/docker-wso2esb/tree/esb-4.9.0)
+## Tags
+* [5.0.0, latest](https://github.com/ihcsim/docker-wso2esb/tree/esb-5.0.0)
+* [4.9.0](https://github.com/ihcsim/docker-wso2esb/tree/esb-4.9.0)
 * [4.8.1](https://github.com/ihcsim/docker-wso2esb/tree/esb-4.8.1)
 
-### Description
+## Description
+The Dockerfile will:
 
-The dockerfile will:
-
-* Use `wget` to pull the ESB 4.9.0 ZIP from a S3 bucket into the container `/opt` folder.
+* Use `wget` to pull the ESB 5.0.0 ZIP from a S3 bucket into the container `/opt` folder.
 * Install `zip`.
-* Unzip the ESB 4.9.0 ZIP.
-* Remove the ESB 4.9.0 ZIP.
+* Unzip the ESB 5.0.0 ZIP.
+* Remove the ESB 5.0.0 ZIP.
 * Expose the container port `9443`, `9763`, `8243`, `8280`.
 * Set the `wso2server.sh` start-up script as the container start-up entrypoint.
 
-### Usage
-* To pull: `docker pull isim/wso2esb`
-* To build: `docker build --rm -t your_image_name github.com/ihcsim/docker-wso2esb`
-* To run: `docker run --rm --name your_container_name -p 9443:9443 -p 9763:9763 -p 8243:8243 -p 8280:8280 your_image_name`
-* To access web admin console, navigate to `https://localhost:9443`
+## Usage
+To run the WSO2 ESB:
+```sh
+docker run -d --name esb -p 9443:9443 isim/wso2esb
+````
+To access web admin console, navigate to `https://localhost:9443` using your web browser.
 
-Follow me on [![alt text][1.1]][1]
-[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
-[1]: http://www.twitter.com/IvanHCSIM
+## License
+Refer to the [LICENSE](LICENSE) file. WSO2 license can be found [here](http://wso2.com/licenses).
