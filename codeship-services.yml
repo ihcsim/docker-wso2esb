@@ -1,0 +1,16 @@
+esb:
+  build:
+    image: isim/wso2esb
+    dockerfile: Dockerfile
+    args:
+      VCS_REF: 9b0545f
+  cached: true
+
+http_test:
+  build:
+    dockerfile: Dockerfile-HttpTest
+  environment:
+    ESB_HOST: esb
+  links:
+    - esb
+  cached: true
