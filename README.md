@@ -1,5 +1,7 @@
 # docker-wso2esb
 
+[ ![Codeship Status for ihcsim/docker-wso2esb](https://app.codeship.com/projects/c5242a80-c358-0134-3327-2621c39d51df/status?branch=master)](https://app.codeship.com/projects/197572)
+
 Docker image to install and run WSO2 Enterprise Service Bus.
 
 ## Tags
