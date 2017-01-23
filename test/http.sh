@@ -7,12 +7,12 @@ http_ok=200
 failed=false
 
 retries=0
-esb_response=`curl -k -s -L -w %{http_code} -o /dev/null https://${ESB_HOST}:9443/`
+esb_response=`curl -k -s -L -w %{http_code} -o /dev/null https://${ESB_HOST}:9443/carbon`
 until [ ${esb_response} != "000" ] || [ ${retries} -eq ${MAX_RETRIES} ]; do
-  echo "Waiting for Admin Console to be ready...Retries ${retries} ${esb_response}  "
-  sleep 2
+  echo "Waiting for Admin Console at https://${ESB_HOST}:9443/carbon to be ready...Retries ${retries}"
+  sleep 5
   retries=$((retries + 1))
-  esb_response=`curl -k -s -L -w %{http_code} -o /dev/null https://${ESB_HOST}:9443/`
+  esb_response=`curl -k -s -L -w %{http_code} -o /dev/null https://${ESB_HOST}:9443/carbon`
 done
 
 if [ ${esb_response} != ${http_ok} ];
