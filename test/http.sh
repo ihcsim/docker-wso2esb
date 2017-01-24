@@ -8,14 +8,14 @@ failed=false
 
 retries=0
 esb_response=`curl -k -s -L -w %{http_code} -o /dev/null https://${ESB_HOST}:9443/carbon`
-until [ ${esb_response} != "000" ] || [ ${retries} -eq ${MAX_RETRIES} ]; do
+until [ "${esb_response}" != "000" ] && [ "${esb_response}" != "404" ] || [ ${retries} -eq ${MAX_RETRIES} ]; do
+  retries=$((retries + 1))
   echo "Waiting for Admin Console at https://${ESB_HOST}:9443/carbon to be ready...Retries ${retries}"
   sleep 5
-  retries=$((retries + 1))
   esb_response=`curl -k -s -L -w %{http_code} -o /dev/null https://${ESB_HOST}:9443/carbon`
 done
 
-if [ ${esb_response} != ${http_ok} ];
+if [ "${esb_response}" != ${http_ok} ];
 then
   echo -e "\033[0;31mAdmin Console is unreachable. Received HTTP response ${esb_response}. To view the ESB container logs, run the \"docker logs\" command.\033[0m"
   failed=true
