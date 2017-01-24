@@ -4,11 +4,6 @@
 
 Docker image to install and run WSO2 Enterprise Service Bus.
 
-## Tags
-* [5.0.0, latest](https://github.com/ihcsim/docker-wso2esb/tree/esb-5.0.0)
-* [4.9.0](https://github.com/ihcsim/docker-wso2esb/tree/esb-4.9.0)
-* [4.8.1](https://github.com/ihcsim/docker-wso2esb/tree/esb-4.8.1)
-
 ## Description
 The Dockerfile will:
 
