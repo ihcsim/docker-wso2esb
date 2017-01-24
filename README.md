@@ -1,6 +1,6 @@
 # docker-wso2esb
 
-[ ![Codeship Status for ihcsim/docker-wso2esb](https://app.codeship.com/projects/c5242a80-c358-0134-3327-2621c39d51df/status?branch=master)](https://app.codeship.com/projects/197572)
+[ ![Codeship Status for ihcsim/docker-wso2esb](https://app.codeship.com/projects/c5242a80-c358-0134-3327-2621c39d51df/status?branch=master)](https://app.codeship.com/projects/197572) [![](https://images.microbadger.com/badges/version/isim/wso2esb:5.0.0.svg)](https://microbadger.com/images/isim/wso2esb:5.0.0 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/commit/isim/wso2esb:5.0.0.svg)](https://microbadger.com/images/isim/wso2esb:5.0.0 "Get your own commit badge on microbadger.com") [![](https://images.microbadger.com/badges/image/isim/wso2esb:5.0.0.svg)](https://microbadger.com/images/isim/wso2esb:5.0.0 "Get your own image badge on microbadger.com")
 
 Docker image to install and run WSO2 Enterprise Service Bus.
 
